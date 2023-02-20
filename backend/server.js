@@ -44,8 +44,8 @@ cloudinary.config({
 // })
 
 // SERVER 2 FOR HOST 
-httpServer.listen(port, 0.0.0.0, err = {
-                  if(err) trow err 
+httpServer.listen(port, '0.0.0.0', err => {
+                  if(err) throw err 
 console.log(`Server is working on http://localhost:${port}`)
 })
 
