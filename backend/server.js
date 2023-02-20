@@ -38,9 +38,15 @@ cloudinary.config({
 // extra 
   
 
-// create server
-const server = app.listen(process.env.PORT,() =>{
-    console.log(`Server is working on http://localhost:${process.env.PORT}`)
+// // create server
+// const server = app.listen(process.env.PORT,() =>{
+//     console.log(`Server is working on http://localhost:${process.env.PORT}`)
+// })
+
+// SERVER 2 FOR HOST 
+const server = httpServer.listen(port, 0.0.0.0, err = {
+                  if(err) trow err 
+console.log(`Server is working on http://localhost:${port}`)
 })
 
 
